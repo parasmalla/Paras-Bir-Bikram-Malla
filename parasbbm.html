@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Paras Bir Bikram Malla</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+<style>
+/* ---------------- Global Aesthetic Styling ---------------- */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle at top, #10121f, #05060c 60%);
+    color: #fff;
+}
+
+* { box-sizing: border-box; }
+
+/* Smooth fade animations */
+.fade-in {
+    opacity: 0;
+    animation: fadein 1.4s forwards;
+}
+@keyframes fadein {
+    to { opacity: 1; }
+}
+
+/* ---------------- Header ---------------- */
+header {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero-img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid rgba(255,255,255,0.4);
+    box-shadow: 0 0 25px rgba(255,255,255,0.2);
+}
+
+.name {
+    font-family: 'Playfair Display', serif;
+    font-size: 45px;
+    margin-top: 18px;
+}
+
+.tagline {
+    font-size: 20px;
+    opacity: 0.85;
+}
+
+/* Typewriter effect */
+.typing {
+    font-size: 17px;
+    margin-top: 10px;
+    height: 28px;
+    overflow: hidden;
+    border-right: 2px solid #fff;
+    white-space: nowrap;
+    animation: blink 0.6s infinite;
+}
+@keyframes blink { 50% { border-color: transparent; } }
+
+/* ---------------- Section Card Layout ---------------- */
+.section {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 40px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 18px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 0 35px rgba(0,0,0,0.45);
+}
+
+/* Titles */
+.section h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+/* ---------------- Skills Bars ---------------- */
+.skill {
+    margin: 15px 0;
+}
+.skill-name {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px;
+}
+.bar {
+    width: 100%;
+    height: 10px;
+    border-radius: 10px;
+    background: #333;
+    overflow: hidden;
+}
+.bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #6a5acd, #9370db);
+    border-radius: 10px;
+}
+
+/* ---------------- Projects ---------------- */
+.project {
+    background: rgba(255,255,255,0.07);
+    padding: 18px;
+    margin: 12px 0;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+.project:hover {
+    transform: translateY(-5px);
+    background: rgba(255,255,255,0.12);
+}
+
+/* ---------------- Social Icons ---------------- */
+.social-links {
+    text-align: center;
+    margin-top: 30px;
+}
+.social-links a {
+    font-size: 20px;
+    padding: 12px 18px;
+    border-radius: 30px;
+    margin: 5px;
+    background: rgba(255,255,255,0.08);
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+}
+.social-links a:hover {
+    background: rgba(255,255,255,0.15);
+}
+
+/* Footer */
+footer {
+    margin: 50px 0 20px;
+    text-align: center;
+    opacity: 0.6;
+}
+</style>
+</head>
+
+<body>
+
+<!-- ---------------- Hero Section ---------------- -->
+<header class="fade-in">
+    <img src="C:\Users\jmjkju\Pictures\Camera Roll\ParasBBM" class="hero-img" alt="">
+    <div class="name">Paras Bir Bikram Malla</div>
+    <div class="tagline">Politician • Social Worker • Creative Thinker</div>
+    <div class="typing" id="typing"></div>
+</header>
+
+<!-- ---------------- About ---------------- -->
+<section class="section fade-in">
+    <h2>About Me</h2>
+    <p style="text-align:center; font-size:18px;">
+        A soft-hearted strategist — I dream in poetry, think in policies,  
+        and walk with the calm confidence of someone who knows his future is bigger than his fear.  
+        Born in Dhangadhi, shaped by purpose, aiming for the highest seat of service:  
+        <b>Future Prime Minister of Nepal.</b>
+    </p>
+</section>
+
+<!-- ---------------- Skills ---------------- -->
+<section class="section fade-in">
+    <h2>Skills</h2>
+
+    <div class="skill">
+        <div class="skill-name"><span>Poetry</span><span>95%</span></div>
+        <div class="bar"><div class="bar-fill" style="width:95%"></div></div>
+    </div>
+
+    <div class="skill">
+        <div class="skill-name"><span>Narrative Writing</span><span>92%</span></div>
+        <div class="bar"><div class="bar-fill" style="width:92%"></div></div>
+    </div>
+
+    <div class="skill">
+        <div class="skill-name"><span>Politics</span><span>90%</span></div>
+        <div class="bar"><div class="bar-fill" style="width:90%"></div></div>
+    </div>
+
+    <div class="skill">
+        <div class="skill-name"><span>Leadership</span><span>88%</span></div>
+        <div class="bar"><div class="bar-fill" style="width:88%"></div></div>
+    </div>
+
+    <div class="skill">
+        <div class="skill-name"><span>Public Speaking</span><span>87%</span></div>
+        <div class="bar"><div class="bar-fill" style="width:87%"></div></div>
+    </div>
+</section>
+
+<!-- ---------------- Projects ---------------- -->
+<section class="section fade-in">
+    <h2>Projects</h2>
+
+    <div class="project">
+        <b>Youth Leadership Campaign 2024</b><br>
+        A movement empowering the next generation toward discipline, integrity and purpose.
+    </div>
+
+    <div class="project">
+        <b>Digital Awareness Initiative</b><br>
+        Helping communities understand online safety, passwords, fraud and cyber hygiene.
+    </div>
+
+    <div class="project">
+        <b>Personal Portfolio Website</b><br>
+        A beautifully designed digital identity that represents my journey and ambitions.
+    </div>
+</section>
+
+<!-- ---------------- Achievements ---------------- -->
+<section class="section fade-in">
+    <h2>Achievements</h2>
+
+    <p><b>2024:</b> Led youth community programs and represented social welfare initiatives.</p>
+    <p><b>2023:</b> Developed leadership and political analysis skills at school level.</p>
+    <p><b>2022:</b> Recognized for creative writing and narrative storytelling.</p>
+</section>
+
+<!-- ---------------- Social ---------------- -->
+<div class="social-links fade-in">
+    <a href="https://www.facebook.com/paras.malla.378">Facebook</a>
+    <a href="https://www.instagram.com/parasbirbikrammalla/">Instagram</a>
+    <a href="mailto:mallaparas267@gmail.com">Email</a>
+</div>
+
+<footer>© 2025 Paras Bir Bikram Malla • Designed with Purpose</footer>
+
+<!-- ---------------- Typing Script ---------------- -->
+<script>
+const titles = [
+    "Dreamer with Direction",
+    "Highly Reputed Personality",
+    "Future Prime Minister of Nepal",
+    "Soft-Hearted, Strong-Minded",
+    "Poet • Leader • Visionary"
+];
+
+let i = 0, j = 0;
+const speed = 80;
+const typing = document.getElementById("typing");
+
+function typeEffect() {
+    if (j < titles[i].length) {
+        typing.textContent += titles[i].charAt(j);
+        j++;
+        setTimeout(typeEffect, speed);
+    } else {
+        setTimeout(() => {
+            typing.textContent = "";
+            j = 0;
+            i = (i + 1) % titles.length;
+            typeEffect();
+        }, 1200);
+    }
+}
+typeEffect();
+</script>
+
+</body>
+</html>
